@@ -1,0 +1,103 @@
+/* Reset styles for padding, margin, and box-sizing */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(unnamed\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgb(205, 71, 9, 0.9);
+    width: 50%;
+    min-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(53, 57, 188, 0.3);
+    border: none;
+    padding-bottom: 10px;
+
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 100px;
+    background: transparent;
+}
+
+.timerDisplay{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    color: #0e0e0e;
+}
+.countdown {
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 139, 253, 0.25);
+}
+
+.hours {
+    background-color: #d44406;
+}
+
+.minutes {
+    background-color: #d44406;
+}
+
+.seconds {
+    background-color: #d44406;
+}
+.milliseconds {
+    background-color: #d44406;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: #205e94;
+    color: #ffffff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button#pauseTimer {
+    background-color: #d23332;
+}
+
+.buttons button#resetTimer {
+    background-color: #20b380;
+}
+.button button:hover{
+    opacity: 0.9;
+}
